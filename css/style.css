@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+h1{
+  font-size: 1.5em;
+}
+/* -----------loading------------- */
+.loading {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: 0.5s ease;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loading h1{
+  font-size: 1.5em;
+}
+.loading .go {
+  padding: 5px 20px;
+  margin-top: 10px;
+  font-size: 2em;
+  cursor: pointer;
+  border-radius: 5px;
+  
+  transition: 0.5s ease;
+}
+.loading .go:hover {
+  color: green;
+  transform: scale(1.1);
+}
+/* ---------container------------ */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 /50%);
+}
+.title {
+  color: white;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  top: 50px;
+}
+.title h2{
+  font-size: 2em;
+}
+.title p {
+  font-size: 1.7em;
+  padding: 10px 0 0 0;
+}
+/* content */
+.content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  top: 150px;
+}
+/* 767 */
+@media (max-width: 400px) {
+  *{
+    font-size: 10px;
+  }
+  .container{
+    height: 800px;
+  }
+  .content {
+    flex-direction: column;
+  }
+}
+/* صيوحه 1 */
+.box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px;
+}
+.box1 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.box1 button {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 1.3em;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.box1 button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+.num1 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+}
+/* صيوحه 2 */
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px;
+}
+.box2 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.box2 button {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 1.3em;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.box2 button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+.num2 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+}
+
+/* box3 */
+.box3 {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 150px;
+}
+.box3 h3 {
+  font-size: 2em;
+  color: white;
+}
+.box3 p {
+  color: white;
+  font-size: 1.5em;
+}
+.image {
+  margin: 10px 0;
+}
+.box3 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.box3 img:hover {
+  transform: scale(1.1);
+}
